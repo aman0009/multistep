@@ -15,10 +15,9 @@ controller('formCtrl', ['$scope', '$http', function($scope, $http) {
     ccEmailList: []
   };
   
-  // Navigation functions
+  
   $scope.next = function (stage) {
-    //$scope.direction = 1;
-    //$scope.stage = stage;
+  
     
     $scope.formValidation = true;
     
@@ -34,7 +33,7 @@ controller('formCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.stage = stage;
   };
   
-  // CC email list functions
+
   $scope.addCCEmail = function () {
     $scope.rowId++;
 
@@ -58,11 +57,11 @@ controller('formCtrl', ['$scope', '$http', function($scope, $http) {
   };
   
   
-  // Post to desired exposed web service.
+ 
   $scope.submitForm = function () {
     var wsUrl = "someURL";
 
-    // Check form validity and submit data using $http
+   
     if ($scope.multiStepForm.$valid) {
       $scope.formValidation = false;
 
@@ -92,7 +91,7 @@ controller('formCtrl', ['$scope', '$http', function($scope, $http) {
   };
   
   $scope.reset = function() {
-    // Clean up scope before destorying
+
     $scope.formParams = {};
     $scope.stage = "";
   }

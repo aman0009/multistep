@@ -1,6 +1,4 @@
 
-
-/*------>>> Animations <<<-----*/
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.25s ease-in;
@@ -38,20 +36,16 @@
   position:absolute;
 
 }
-/* hide leaving slide  */
-/* show */
+
 .animate-switch.ng-leave{
   left:0;
 }
-/* hide */
 .forward .animate-switch.ng-leave.ng-leave-active{
   left:-100%;
 }
 .backward .animate-switch.ng-leave.ng-leave-active{
   left: 100%;
 }
-/* show entering slide  */
-/* hide */
 .forward .animate-switch.ng-enter {
   left:100%;
 }
@@ -63,10 +57,6 @@
   left:0;
 }
 
-
-/*-----------------------------------*/
-/*------>>> Validation <<<-----------*/
-/*-----------------------------------*/
 
 .form-validation input.ng-invalid-maxlength {
   border:2px solid #D9272D;
@@ -93,10 +83,6 @@
   border: 2px solid #D9272D;
 }
 
-/*-----------------------------------*/
-/*------->>> FORM STYLES <<<---------*/
-/*-----------------------------------*/
-
 .note {
   display: block;
   font-size: 12px;
@@ -119,15 +105,7 @@
   background-color: rgba(217, 39, 45, 0.5);
 }
 
-/*-----------------------------------*/
-/*----------->>> HELPERS <<<-------------*/
-/*-----------------------------------*/
 
-/*
-  Allow angular.js to be loaded in body, hiding cloaked elements until
-  templates compile.  The !important is important given that there may be
-  other selectors that are more specific or come later and might alter display.
- */
 [ng\:cloak], [ng-cloak], .ng-cloak {
     display: none;
 }
